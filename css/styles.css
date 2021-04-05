@@ -2,9 +2,10 @@
     --primary-text-color:  rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
     --accent-color:  #18A0FB;
+    --primary-bg-color: #ffffff;
 }
 .page{
-    background-color: #ffffff;
+    background-color:var(--primary-bg-color);
     color: var(--primary-text-color)
 }
 /* background: #F5F5F5; */
@@ -21,7 +22,7 @@
     color:var(--title-text-color);
 }
 
-.section-title{
+.section-title {
     color:var(--title-text-color);
 }
 /* features */  
@@ -32,3 +33,29 @@
 .features-link{
     color:var(--accent-color);
 }
+/* example work */
+.work-title ,
+.title
+{
+    color: var(--title-text-color);
+}
+.section-work ,
+.section-signup {
+    background: #F5F5F5;
+}
+/* button */
+.button{
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+}
+.button.primary{
+   
+    background-color: var(--primary-bg-color);
+    color: var(--accent-color);
+}
+.button.secondary{
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+}
+    
+
