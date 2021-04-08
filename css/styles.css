@@ -12,6 +12,16 @@
      
     
 }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
 /* background: #F5F5F5; */
 .page-logo{
     color:var(--title-text-color) ;
@@ -19,27 +29,35 @@
     line-height: 1.14 ;
     font-family: Comfortaa, sans-serif;
 }
-/* site nav */
-.site-nav a {
-    color: var(--accent-color);
+.link{
+    text-decoration: none;
+    color:  inherit;
     font-size: 15px;
     line-height: 1.2;
 }
-.site-nav a:hover ,
-.site-nav a:focus
-{
-    color:var(--title-text-color);
-}
-.auth-nav{
+.link:hover,
+.link:focus{
     color: var(--accent-color);
-    font-size: 15px;
-    line-height: 1.2;
-}
-.auth-nav a:hover,
-.auth-nav a:focus{
-     color: var(--title-text-color);
+    
 }
 
+.list{
+    list-style: none;
+}.button{
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
+}
+  .link.primary{
+   
+    background-color: var(--primary-bg-color);
+    color: var(--accent-color);
+} 
+.link.secondary{
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    font-size: 17px;
+    line-height: 1.23;
+}    
 .section-title {
     color:var(--title-text-color);
     font-size: 56px;
@@ -50,14 +68,14 @@
 .section-feautures{
     color: var(--title-text-color);
     font-size: 48px;
-    ine-height: 1.5;
+    line-height: 1.5;
 }
-.features 
+
 .features-title{
     color: var(--title-text-color);
     font-weight: bold;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 1.4;
 }
 .features-link{
     color:var(--accent-color);
@@ -72,19 +90,4 @@
 .section-signup {
     background: #F5F5F5;
 }
-/* button */
-.button{
-    color: var(--title-text-color);
-    background-color: var(--primary-bg-color);
-}
-.button.primary{
-   
-    background-color: var(--primary-bg-color);
-    color: var(--accent-color);
-}
-.button.secondary{
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-    font-size: 17px;
-    line-height: 1.23;
-}
+
