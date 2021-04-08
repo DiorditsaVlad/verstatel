@@ -6,29 +6,58 @@
 }
 .page{
     background-color:var(--primary-bg-color);
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    letter-spacing: -0.015em;
+    font-family: Montserrat, sans-serif;
+     
+    
 }
 /* background: #F5F5F5; */
 .page-logo{
     color:var(--title-text-color) ;
+    font-size: 28px;
+    line-height: 1.14 ;
+    font-family: Comfortaa, sans-serif;
 }
 /* site nav */
 .site-nav a {
     color: var(--accent-color);
+    font-size: 15px;
+    line-height: 1.2;
 }
 .site-nav a:hover ,
 .site-nav a:focus
 {
     color:var(--title-text-color);
 }
+.auth-nav{
+    color: var(--accent-color);
+    font-size: 15px;
+    line-height: 1.2;
+}
+.auth-nav a:hover,
+.auth-nav a:focus{
+     color: var(--title-text-color);
+}
 
 .section-title {
     color:var(--title-text-color);
+    font-size: 56px;
+    line-height: 1.43;
+    text-align: center;
 }
 /* features */  
+.section-feautures{
+    color: var(--title-text-color);
+    font-size: 48px;
+    ine-height: 1.5;
+}
 .features 
 .features-title{
     color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
 }
 .features-link{
     color:var(--accent-color);
@@ -56,4 +85,6 @@
 .button.secondary{
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
+    font-size: 17px;
+    line-height: 1.23;
 }
