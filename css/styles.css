@@ -4,13 +4,25 @@
     --accent-color:  #18A0FB;
     --primary-bg-color: #ffffff;
 }
+.conteiner{
+    width: 1300px;
+   margin-left: auto;
+   margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Остальной код */
 .page{
     background-color:var(--primary-bg-color);
     color: var(--primary-text-color);
     letter-spacing: -0.015em;
     font-family: Montserrat, sans-serif;
      
-    
+   
+}
+.page-header{
+    background-color: wheat;
 }
 .visually-hidden {
     position: absolute !important;
@@ -34,6 +46,7 @@
     color:  inherit;
     font-size: 15px;
     line-height: 1.2;
+    
 }
 .link:hover,
 .link:focus{
@@ -43,16 +56,24 @@
 
 .list{
     list-style: none;
-}.button{
+}
+.button{
     color: var(--title-text-color);
     background-color: var(--primary-bg-color);
+    text-decoration: none;
+    color:  inherit;
+    display: inline-block ;
+    border-radius: 6px;
+    padding: 11px 32px;
+
 }
-  .link.primary{
+  .button.primary{
    
     background-color: var(--primary-bg-color);
     color: var(--accent-color);
+  
 } 
-.link.secondary{
+.button.secondary{
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
     font-size: 17px;
