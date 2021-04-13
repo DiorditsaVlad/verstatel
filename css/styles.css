@@ -64,20 +64,25 @@
     color:  inherit;
     display: inline-block ;
     border-radius: 6px;
-    padding: 11px 32px;
+    padding: 11px 34px;
+    min-width: 130px;
+    text-align: center;
+    
 
 }
   .button.primary{
    
     background-color: var(--primary-bg-color);
     color: var(--accent-color);
-  
+    border: 1px solid var(--accent-color);
+    font-size: 17px;
+    line-height: 1.23;
 } 
 .button.secondary{
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
-    font-size: 17px;
-    line-height: 1.23;
+    border: 1px solid transparent;
+   
 }    
 .section-title {
     color:var(--title-text-color);
