@@ -25,10 +25,9 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
+  max-width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
-  outline: 2px solid tomato;
 }
 .list {
   padding: 0;
@@ -56,9 +55,9 @@ body {
 }
 
 /* Page header */
-
+/* 
 .page-header {
-}
+} */
 
 /* Site nav */
 .site-nav{
@@ -137,7 +136,8 @@ body {
   line-height: 1.5;
 }
 
-.section-title.centered {
+.section-title.centered,
+.section-description.centered{
   text-align: center;
 }
 
@@ -160,6 +160,16 @@ body {
   font-size: 24px;
   line-height: 1.5;
 }
+.feature-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+
+}
+.feature-list .item{
+  width: 625px;
+  margin: 40px 75px;
+}
 
 /* Works */
 
@@ -167,17 +177,36 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--primary-white-color);
+  display: flex;
+  align-items: center;
 }
 
 .work-list > .item:nth-child(2n) {
   background-color: var(--secondary-bg-color);
+  flex-direction: row-reverse;
 }
-
+.work-list .item:nth-child(2n+1) .work-description{
+  margin-left: 84px;
+}
+.work-list .item:nth-child(2n) .work-description{
+  margin-right: 84px;
+}
 .feature-list p {
   margin-top: 0;
   margin-bottom: 32px;
 }
 
+.client-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.client-list li{
+  margin: 30px 40px;
+}
 /* Button */
 
 .button {
